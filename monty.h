@@ -1,6 +1,7 @@
+#ifndef MONTY_H
+#define MONTY_H
 #include <stdlib.h>
-
-/* Structure */
+#include <stdio.h>
 typedef struct stack_s
 {
     int n;
@@ -9,8 +10,8 @@ typedef struct stack_s
 } stack_t;
 
 /* Function Prototypes */
+void pall(stack_t **head);
 void push_stack(stack_t **stack, int value);
-void pall_p(stack_t **stack);
 void sint(stack_t **stack);
 void free_s(stack_t *stack);
 void process_f(const char *filename, stack_t **stack);
