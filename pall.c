@@ -1,15 +1,19 @@
 #include "monty.h"
 /**
-* pall - Prints all the values
-* @stack: Double pointer
+ * pall - prints the stack
+ * @head: stack head
+ * @counter: no used
+ * Return: no return
 */
-void pall_p(stack_t **stack)
+void pall(stack_t **head)
 {
-stack_t *current = *stack;
-
-while (current != NULL)
-{
-printf("%d\n", current->n);
-current = current->next;
-}
+	stack_t *stak;
+	stak = *head;
+	if (stak == NULL)
+		return;
+	while (stak)
+	{
+		printf("%d\n", stak->n);
+		stak = stak->next;
+	}
 }
