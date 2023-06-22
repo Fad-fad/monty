@@ -11,7 +11,7 @@ typedef struct stack_s
 
 /* Function Prototypes */
 void pall(stack_t **head);
-void push_stack(stack_t **stack, int value);
+void push_stack(stack_t **stack, unsigned int counter);
 void sint(stack_t **stack);
 void free_s(stack_t *stack);
 void process_f(const char *filename, stack_t **stack);
