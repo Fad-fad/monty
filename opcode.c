@@ -15,17 +15,6 @@ void (*select_op(char *s))(stack_t **, unsigned int)
 	instruction_t ops[] = {
 		{ "push", push },
 		{ "pall", pall },
-		{ "pint", pint },
-		{ "swap", swap },
-		{ "pop", pop },
-		{ "add", add },
-		{ "nop", nop },
-		{ "sub", sub },
-		{ "div", _div },
-		{ "mul", mul },
-		{ "mod", mod },
-		{ "pchar", pchar },
-		{ NULL, NULL }
 	};
 
 	for (i = 0; ops[i].opcode; i++)
