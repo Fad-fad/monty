@@ -2,7 +2,13 @@
 #include "monty.h"
 static instruction_t opcod[] = {
 {"push", push},
-{"pall", pall}
+{"pall", pall},
+{"pint", pint},
+{"pop", pop},
+{"swap", swap},
+{"add", add},
+{"nop", nop},
+{NULL, NULL}
 };
 void prs_fl(char *flnm);
 instruction_t *gt_instru(char *opcode);
