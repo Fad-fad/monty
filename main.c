@@ -4,7 +4,7 @@
 #include "monty.h"
 
 /**
-* main - Entry point //ZAKARIA
+* main - Entry poi
 * @argc: Number of cmd args
 * @argv: Array of args
 *
